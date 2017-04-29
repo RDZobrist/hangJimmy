@@ -1,7 +1,7 @@
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 // collection of words to be guessed by player\\\
 var wordBank = ["homerun", "baseball", "football", "soccer", "basketball", "balk", "bunt", "sacrifice", "goal", "hockey", "birdie", "golf"];
-// function that generates random word to be guessed by pkayer\\\
+// function that generates random word to be guessed by player\\\
 var wordInQuestion = wordBank[Math.floor(Math.random() * wordBank.length)];
 var gameOver = true;
 var gameLetters = [];
