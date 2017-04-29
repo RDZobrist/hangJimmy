@@ -1,0 +1,45 @@
+body {
+    background-color: yellow;
+}
+
+.imageOne,
+.imageTwo,
+.imageThree,
+.imageFour,
+.imageFive,
+.imageSix,
+.imageSeven {
+    width: 127px;
+    height: 177px;
+    background: url("assets/images/hangmanComplete.jpg");
+    background-position: 0px 0px;
+}
+
+.imageOne {
+	background-position: -127px 0px;
+}
+
+.imageTwo {
+	background-position: -254px 0px;
+}
+
+.imageThree {
+	background-position: -381px 0px;
+}
+
+.imageFour{
+	background-position: -508px 0px;
+
+}
+.imageFive  {
+	background-position: 635px 0px;
+}
+
+.imageSix  {
+	background-position: 762px 0px;
+
+}
+
+.imageSeven {
+	background-position: 889px 0px;
+}
