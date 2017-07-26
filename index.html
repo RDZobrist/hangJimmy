@@ -1,59 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-     <link rel="stylesheet" type="text/css" href="assets/css/bsTheme.css">
-     <meta charset="UTF-8">
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
      <title>HangJimmy</title>
 </head>
 
 <body>
-     <div class="jumbotron">
-          <h1> hangman </h1>
-     </div>
-     <div class="row">
-          <div class="col-md-6 text-center">
-               <div id="stageWord">
-                    <span style="color: #4aeeee">Your Word:</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6">
-            <div id="offLimitLetters">
-                <p>Letter Cemetary:</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6 ">
-            <div id="results">
-            <div class="row">
-                <div class="col-md-6">
-                     <img id="fateofJimmy" src="assets/images/hangmanImg7.png" width="325px" height="300px"></span>
-                    <p>wins:</p>
-               </div>
+     <div class="container">
+          <div class="jumbotron">
+               <h1>Hangman</h1>
+               <p><small>Where you can sharpen your vocab skills while saving Jimmy</small></p>
           </div>
-     </div>
-     <div class="row">
-          <div class="header">
-               <div class="col-md-6">
-                    <div id="message">
-                         <p></p>
+          <div class="panel panel-default">
+               <div class="panel-heading">
+                    <div class="panel-title">
+                         <h3 class="panel-title">Word To Guess:</h3>
                     </div>
                </div>
+               <div class="panel-body">
+                    <h3 id="wordToGuess"></h3>
+               </div>
           </div>
-          <script type="text/javascript" src="assets/javascript/app.js"></script>
+          <div class="panel panel-default">
+               <div class="panel-body">
+                    Wrong Guesses: <span id="wrongGuesses"></span>
+               </div>
+          </div>
+          <div class="panel panel-default">
+               <div class="panel-body"> Guesses Left: <span id="numGuesses"></span>
+               </div>
+          </div>
+          <div class="panel panel-default">
+               <div class="panel-body">
+                    Win Counter: <span id="winCounter">
+               </div>
+          </div>
+          <div class="panel panel-default">
+               <div class="panel-body">
+                    Loss Counter: <span id="lossCounter"></span>
+               </div>
+          </div>
      </div>
-     </script>
-     </div>
-     </div>
-     </span>
-     </div>
-     </div>
-     </div>
+     <script type="text/javascript" src="logicHang.js"></script>
 </body>
 
 </html>
+</div>
